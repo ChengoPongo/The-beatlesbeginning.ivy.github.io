@@ -1,0 +1,193 @@
+/* 全体の基本設定 */
+body {
+  margin: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #0a0a0a; /* 黒に近い背景 */
+  color: #ffffff;
+  line-height: 1.7;
+}
+
+/* ヘッダー */
+header {
+  background-color: #121212;
+  padding: 2rem;
+  text-align: center;
+  animation: fadeIn 2s ease-out;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  color: #ffd700; /* ゴールド */
+  text-shadow: 2px 2px 5px rgba(255, 215, 0, 0.2);
+}
+
+header p {
+  font-size: 1.3rem;
+  color: #c14444; /* ビンテージレッド */
+  font-weight: bold;
+  text-shadow: 1px 1px 4px rgba(193, 68, 68, 0.3);
+}
+
+/* タイムライン全体 */
+.timeline {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* 各イベント */
+.timeline-event {
+  background-color: #1a1a1a;
+  border-left: 4px solid #ffd700;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border-radius: 10px;
+  animation: fadeIn 1.5s ease-in;
+}
+
+.timeline-event.right {
+  border-left: none;
+  border-right: 4px solid #ffd700;
+}
+
+/* 日付表示 */
+.timeline-date {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #ffd700;
+  margin-bottom: 0.5rem;
+}
+
+/* タイトル */
+.timeline-content h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.8rem;
+  margin-top: 0;
+  color: #ffffff;
+}
+
+/* メイン画像 */
+.main-content-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 8px;
+  margin: 1rem 0;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+/* YouTube */
+.youtube-video iframe {
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+  border: none;
+  border-radius: 8px;
+}
+
+.caption {
+  color: #cccccc;
+  font-size: 0.9rem;
+}
+
+/* アルバム紹介 */
+.album-showcase {
+  margin-top: 1.5rem;
+}
+
+.album-showcase h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5rem;
+  color: #ffd700;
+}
+
+/* アルバムグリッド */
+.albums-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.album-item {
+  background-color: #222;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 180px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+}
+
+.album-cover {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.album-title {
+  font-weight: bold;
+  margin-top: 0.5rem;
+  color: #ffffff;
+}
+
+.album-year {
+  color: #aaaaaa;
+  font-size: 0.9rem;
+}
+
+/* フッター */
+footer {
+  background-color: #121212;
+  text-align: center;
+  padding: 1rem;
+  color: #999999;
+}
+
+/* アニメーション */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.members-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* 横方向中央揃え */
+  gap: 2rem;               /* メンバー間の隙間 */
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.member {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 260px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  text-align: center; /* テキスト中央揃え */
+}
+
+.member-photo {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.role {
+  font-weight: bold;
+  color: #ffd700;
+  margin-bottom: 0.5rem;
+}
+
+.bio {
+  color: #ccc;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
