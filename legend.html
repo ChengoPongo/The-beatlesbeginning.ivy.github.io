@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>伝説 - The Beatles</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Playfair+Display&family=Noto+Sans+JP&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    window.addEventListener("scroll", () => {
+      document.querySelectorAll(".fade-in").forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          el.classList.add("visible");
+        }
+      });
+    });
+  </script>
+</head>
+<body>
+  <h1 class="title-bg">残した伝説</h1>
+
+  <nav class="toc">
+    <a href="index.html">活動の軌道</a>
+    <a href="albums.html">アルバム紹介</a>
+    <a href="members.html">メンバー紹介</a>
+    <a href="legend.html">残した伝説</a>
+  </nav>
+
+  <section class="legend-section fade-in">
+    <div class="legend-intro">
+      <p>ビートルズは音楽だけでなく、その存在自体が数々の伝説を生み出しました。このページでは、彼らにまつわる都市伝説や逸話、歴史的瞬間を紹介します。</p>
+    </div>
+
+    <div class="legend-toc">
+      <ul>
+        <li><a href="#paul-dead">1. 「ポールは死んでいる」説</a></li>
+        <li><a href="#lennon-messiah">2. レノン＝救世主説</a></li>
+        <li><a href="#breakup">3. 解散の原因</a></li>
+        <li><a href="#yesterday-dream">4. 夢の中のイエスタデイ</a></li>
+        <li><a href="#world-tour">5. 世界ツアーの伝説</a></li>
+        <li><a href="#india">6. インド訪問</a></li>
+        <li><a href="#red-blue">7. 赤青アルバム</a></li>
+        <li><a href="#amp-explosion">8. アンプ爆発事件</a></li>
+        <li><a href="#rooftop">9. ルーフトップ・ライブ</a></li>
+        <li><a href="#record-burning">10. レコード焚書事件</a></li>
+        <li><a href="#revolution9">11. 「レボリューション9」</a></li>
+        <li><a href="#please-please-me">12. デビューアルバムの奇跡</a></li>
+      </ul>
+    </div>
+
+    <div class="legend-item">
+      <img src="webサイト画像/死亡説.jpg" alt="ポールは死んでいる説" />
+      <div class="legend-text">
+        <h2 id="paul-dead">🌟 1. 「ポールは死んでいる」説（Paul is dead）</h2>
+        <p>1969年頃に広まった都市伝説で、「ポール・マッカートニーは1966年に交通事故で死亡し、現在のポールは替え玉である」というもの。</p>
+        <ul>
+          <li>アルバム『Abbey Road』のジャケットで、ポールだけ裸足で歩いている。</li>
+          <li>『Sgt. Pepper's Lonely Hearts Club Band』に墓を連想させる花の装飾がある。</li>
+          <li>レコードを逆回転させると「Paul is dead」と聞こえるという主張も。</li>
+        </ul>
+        <p>これはファンの想像力と当時のサブカルチャーが生んだ伝説で、もちろんポールは健在です。</p>
+      </div>
+    </div>
+
+    <div class="legend-item">
+      <img src="webサイト画像/救世主.jpg" alt="レノン＝救世主説" />
+      <div class="legend-text">
+        <h2 id="lennon-messiah">🎵 2. レノン＝救世主説</h2>
+        <p>ジョン・レノンはその思想や発言から、しばしば「神格化」されることがありました。</p>
+        <ul>
+          <li>「ビートルズはイエスよりも有名になった」という発言はアメリカ南部で大きな騒動に。</li>
+          <li>彼の平和運動（ベッド・インなど）は音楽を越えて社会運動の象徴となった。</li>
+          <li>「イマジン」は今なお平和のアンセムとされ、世界中で歌い継がれている。</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="legend-item">
+      <img src="webサイト画像/解散.jpg" alt="ビートルズの解散原因" />
+      <div class="legend-text">
+        <h2 id="breakup">🧠 3. ビートルズの解散原因は誰？</h2>
+        <p>ファンの間で議論が絶えないビートルズ解散の原因。実際には様々な要因が絡み合っています。</p>
+        <ul>
+          <li>ヨーコ・オノの存在が原因とする説</li>
+          <li>ポールとジョンの音楽的方向性の違い</li>
+          <li>アップル社設立による経営混乱</li>
+          <li>アレン・クラインの登場による確執</li>
+        </ul>
+        <p>解散の真実は複雑で、一概に誰か一人のせいとは言い切れません。</p>
+      </div>
+    </div>
+
+    <div class="legend-item">
+      <img src="webサイト画像/夢でできた.jpg" alt="夢の中のイエスタデイ" />
+      <div class="legend-text">
+        <h2 id="yesterday-dream">🔮 4. 一晩で名曲が生まれた「夢の中のイエスタデイ」</h2>
+        <p>ポール・マッカートニーが夢の中でメロディを思いつき、起きてすぐにピアノで弾いて確認したというエピソード。</p>
+        <p>それが「Yesterday」であり、ビートルズ史上最も多くカバーされた曲となりました。</p>
+      </div>
+    </div>
+
+    <div class="legend-item">
+      <img src="webサイト画像/世界ツアー.jpg" alt="世界ツアー" />
+      <div class="legend-text">
+        <h2 id="world-tour">🌍 5. 世界ツアーの伝説</h2>
+        <p>1960年代、ビートルズは世界中でツアーを行い、熱狂的なファンを生み出しました。騒音や混乱の中でも彼らは一流のパフォーマンスを見せ、音楽史に残る伝説的なライブを数多く実現しました。</p>
+      </div>
+    </div>
+
+    <div class="legend-item">
+      <img src="webサイト画像/インド訪問.jpg" alt="インド訪問" />
+      <div class="legend-text">
+        <h2 id="india">🕉️ 6. インド訪問とスピリチュアルな影響</h2>
+        <p>1968年、ビートルズはインドにあるリシケシのアシュラムを訪れ、瞑想と精神修養を体験。これにより彼らの音楽には東洋的な要素が取り入れられ、多くの新しいサウンドや歌詞が生まれました。</p>
+      </div>
+    </div>
+
+    <div class="legend-item">
+      <img src="webサイト画像/赤青.jpg" alt="赤青アルバム" />
+      <div class="legend-text">
+        <h2 id="red-blue">🔵🔴 7. 赤青アルバムの愛称</h2>
+        <p>「赤盤」「青盤」と呼ばれるベストアルバムは、ビートルズの代表曲を時代別に収録。赤盤は初期のヒット曲、青盤は後期の名曲が中心で、ファンの間で今なお人気の高い作品です。</p>
+      </div>
+    </div>
+
+    <div class="legend-item">
+      <img src="webサイト画像/爆発.jpg" alt="アンプ爆発事件" />
+      <div class="legend-text">
+        <h2 id="amp-explosion">💥 8. アンプ爆発事件</h2>
+        <p>1960年代のあるライブで、ジョージ・ハリスンのギターアンプが爆発。ライブは一時中断されたものの、メンバーはすぐに演奏を再開し、ファンの記憶に残る伝説の瞬間となりました。</p>
+      </div>
+    </div>
+
+    <div class="legend-item">
+      <img src="webサイト画像/ルーフトップライブ.jpg" alt="ルーフトップライブ" />
+      <div class="legend-text">
+        <h2 id="rooftop">🎤 9. ルーフトップ・ライブ（屋上ライブ）</h2>
+        <p>1969年1月、ロンドンのアップル・レコード社屋上で突如行われた無許可ライブ。警察に止められるまで演奏を続け、これがビートルズの実質的な“最後のライブ”となりました。街に響いた生の音楽は今も語り継がれる伝説です。</p>
+      </div>
+    </div>
+
+    <div class="legend-item">
+      <img src="webサイト画像/燃える絵レコード.jpg" alt="レコード焚書事件" />
+      <div class="legend-text">
+        <h2 id="record-burning">🔥 10. レコード焚書事件</h2>
+        <p>一部の米国ラジオ局では、ビートルズの一部楽曲が「若者に悪影響を与える」として放送禁止に。反発するファンが米国各地でビートルズのレコードを焚き火に投じるという異例の事件も起きました。</p>
+      </div>
+    </div>
+
+    <div class="legend-item">
+      <img src="webサイト画像/レボリューション.jpg" alt="レボリューション9" />
+      <div class="legend-text">
+        <h2 id="revolution9">🎧 11. 「レボリューション9」とオカルト的解釈</h2>
+        <p>ホワイトアルバム収録の実験音楽「Revolution 9」は、無数のサウンドが混じり合う異質な曲。一部ファンは「悪魔崇拝のメッセージが隠されている」と信じ、逆再生で意味を読み解こうとしました。</p>
+      </div>
+    </div>
+
+    <div class="legend-item">
+      <img src="webサイト画像/一夜の伝説.jpg" alt="デビューアルバムの奇跡" />
+      <div class="legend-text">
+        <h2 id="please-please-me">🎬 12. デビューアルバム『Please Please Me』は1日で録音された奇跡</h2>
+        <p>1963年2月11日、デビューアルバムはスタジオに1日こもって一気に録音。特に「Twist and Shout」はジョンの喉が限界の中で一発録りされ、彼らの準備と集中力の高さを示しています。</p>
+        <p>このアルバムはイギリスで30週連続1位を記録し、ロック史の幕開けを告げました。</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Beatles History Web
+  </footer>
+</body>
+</html>

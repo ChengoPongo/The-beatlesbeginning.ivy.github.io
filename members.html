@@ -3,51 +3,68 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Beatles - メンバー紹介</title>
+  <title>メンバー紹介 - The Beatles</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Playfair+Display&family=Noto+Sans+JP&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Playfair+Display&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <script>
+    // スクロールでフェードイン
+    window.addEventListener("scroll", () => {
+      document.querySelectorAll(".fade-in").forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          el.classList.add("visible");
+        }
+      });
+    });
+  </script>
 </head>
 <body>
-  <header class="member-header">
-    <h1>メンバー紹介</h1>
-    <p>ザ・ビートルズを構成する4人の個性</p>
-  </header>
+  <h1 class="title-bg">メンバー紹介</h1>
 
-  <section class="members-list">
-    <div class="member">
-      <img src="ジョンレノン.jpg" alt="John Lennon" class="member-photo" />
-      <h2>ジョン・レノン</h2>
-      <p class="role">ボーカル／リズムギター</p>
-      <p class="bio">
-        革新的な作詞家であり、社会的メッセージを込めた楽曲を数多く生み出した。Yoko Onoとの活動も有名。
-      </p>
-    </div>
+  <nav class="toc">
+    <a href="index.html">活動の軌道</a>
+    <a href="albums.html">アルバム紹介</a>
+     <a href="legend.html">残した伝説</a>
+  </nav>
 
-    <div class="member">
-      <img src="ポールマッカートニー.jpg" alt="Paul McCartney" class="member-photo" />
-      <h2>ポール・マッカートニー</h2>
-      <p class="role">ボーカル／ベース</p>
-      <p class="bio">
-        メロディメーカーとしての才能に優れ、後期ビートルズを牽引した存在。現在も精力的に活動中。
-      </p>
-    </div>
+  <section class="member-section fade-in">
+    <div class="card-container">
+      <div class="card">
+        <img src="webサイト画像/ジョンレノン.jpg" alt="John Lennon" />
+        <div class="name">John Lennon</div>
+        <div class="role">ボーカル・リズムギター</div>
+        <div class="description">反骨精神と鋭い感性を持ち、ビートルズの精神的な中心だったジョン・レノンは、1940年リヴァプール生まれ。若くして音楽にのめり込み、ポール・マッカートニーとの出会いをきっかけにバンド活動を本格化させる。ビートルズ時代には「Help!」「Strawberry Fields Forever」など、自己の内面を反映した深い楽曲を数多く生み出した。
 
-    <div class="member">
-      <img src="ジョージハリスン.jpg" alt="George Harrison" class="member-photo" />
-      <h2>ジョージ・ハリスン</h2>
-      <p class="role">リードギター</p>
-      <p class="bio">
-        東洋思想に影響を受けた深い精神性を音楽に反映。ソロでも高い評価を得た。
-      </p>
-    </div>
+バンド解散後はオノ・ヨーコとの芸術活動や平和運動に注力し、「Imagine」などの楽曲で世界中にメッセージを届けた。1970年代にはアメリカに拠点を移し、家族と静かな生活を送る時期もあったが、1980年、復帰作を発表した直後、ニューヨークで銃弾に倒れ、40歳という若さでこの世を去った。彼の音楽と理念は、今も世界中の人々の心に生き続けている。
 
-    <div class="member">
-      <img src="リンゴ.jpg" alt="Ringo Starr" class="member-photo" />
-      <h2>リンゴ・スター</h2>
-      <p class="role">ドラム</p>
-      <p class="bio">
-        安定したドラミングと親しみやすいキャラクターで人気。ソロ活動や俳優業もこなす。
-      </p>
+</div>
+      </div>
+      <div class="card">
+        <img src="webサイト画像/ポールマッカートニー.jpg" alt="Paul McCartney" />
+        <div class="name">Paul McCartney</div>
+        <div class="role">ボーカル・ベース</div>
+        <div class="description">1942年リヴァプール生まれ。豊かなメロディセンスと甘い歌声で知られ、ビートルズのポップな面を支えた存在。幼少期から音楽に親しみ、15歳の時にジョン・レノンと運命的な出会いを果たす。2人で数多くの名曲を共作し、ポールの「Yesterday」や「Hey Jude」は時代を超えて愛されている。
+
+ビートルズ解散後は妻リンダとともにウイングスを結成。1970年代から80年代にかけても精力的に活動し、ソロとしても数々のヒット曲を生み出した。現在もツアーを続け、80歳を越えた今も世界中のファンに音楽の喜びを届けている。長年にわたり音楽の第一線を歩み続ける、まさに「生きるレジェンド」である。
+
+</div>
+      </div>
+      <div class="card">
+        <img src="webサイト画像/ジョージハリスン.jpg" alt="George Harrison" />
+        <div class="name">George Harrison</div>
+        <div class="role">リードギター</div>
+        <div class="description">1943年リヴァプール生まれ。ビートルズの中では最年少ながらも、リードギタリストとして独自の存在感を放った。インド音楽や東洋思想に傾倒し、「While My Guitar Gently Weeps」「Here Comes the Sun」などの名曲を残す。精神性の深い作風で、バンドの音楽性を大きく広げた立役者でもある。
+
+解散後は「All Things Must Pass」などソロ作品を発表。後にトム・ペティやエリック・クラプトンらと「トラヴェリング・ウィルベリーズ」を結成するなど、多彩な活動を展開した。また、映画制作会社「ハンドメイド・フィルムズ」の創設にも関わり、『ライフ・オブ・ブライアン』などのヒット作を世に送り出した。2001年に肺がんのため58歳で死去。静かに、しかし深く世界に影響を与え続けたアーティストだった。</div>
+      </div>
+      <div class="card">
+        <img src="webサイト画像/リンゴ.jpg" alt="Ringo Starr" />
+        <div class="name">Ringo Starr</div>
+        <div class="role">ドラムス</div>
+        <div class="description">1940年リヴァプール生まれ。本名はリチャード・スターキー。ビートルズ加入以前からプロのドラマーとして活動しており、その堅実で味のあるプレイはバンドのグルーヴを支えた。「Yellow Submarine」や「With a Little Help from My Friends」など、彼の優しい歌声が印象的な楽曲も人気を集めている。
+
+ビートルズ解散後も音楽活動を継続し、俳優としても映画に多数出演。1989年からは「リンゴ・スター＆ヒズ・オールスター・バンド」を率い、世界ツアーを展開。陽気な人柄と変わらぬ笑顔で、多くの世代から愛され続けている。ドラムだけでなく、人柄そのものがバンドを結びつけた立役者でもある。</div>
+      </div>
     </div>
   </section>
 
