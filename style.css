@@ -14,13 +14,15 @@ body {
 /* タイトルと見出し */
 h1, h2, h3 {
   font-family: 'Playfair Display', serif;
-  color: #f9d976;
+  color: #ffd700; /* 明るいゴールド */
   text-align: center;
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+  text-shadow:
+    3px 3px 7px rgba(0,0,0,0.9), /* 濃くて大きい影で浮き上がらせる */
+    0 0 10px rgba(255,215,0,0.9);  /* ゴールドの光彩 */
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin-top: 2rem;
 }
 
@@ -39,8 +41,10 @@ h3 {
   font-family: 'Playfair Display', serif;
   font-size: 3.5rem;
   text-align: center;
-  color: #fffbea;
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+  color: #ffd700; /* 明るいゴールド */
+  text-shadow:
+    3px 3px 6px rgba(0,0,0,0.9),
+    0 0 8px rgba(255,215,0,0.85);
   padding: 1rem 1rem;
   background-image: url('webサイト画像/カラフルアビー.jpg');
   background-size: cover;
@@ -49,6 +53,12 @@ h3 {
   margin: 0.6rem auto;
   max-width: 960px;
 }
+
+.no-break {
+  white-space: nowrap;
+}
+
+
 
 /* 目次ナビゲーション */
 nav.toc {
@@ -107,6 +117,7 @@ section {
 }
 
 /* 画像サイズとスタイル（横長・ブラウン管） */
+/* 【ここが顔写真の枠を細くし他ページと揃えた部分です】 */
 .card img {
   width: 100%;
   height: 180px;
@@ -118,7 +129,7 @@ section {
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  border: 6px solid #7a6746;
+  border: 2px solid #7a6746;  /* 以前の6pxから2pxに細く */
   box-sizing: border-box;
 }
 
@@ -204,6 +215,37 @@ footer a:hover {
   .card img {
     height: 160px;
   }
+}
+
+/* メンバー紹介ページの導入文スタイル（残した伝説の最初の文章風） */
+.intro-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  line-height: 1.7;
+  color: #f5f1e9;
+  max-width: 700px;
+  margin: 2rem auto 3rem auto;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: #f0e9d2;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.intro-paragraph {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 1rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
+  text-align: center;
+  color: #fffbea;
 }
 
 /* ===== 伝説ページ用：画像とテキストの並び調整 ===== */
@@ -305,12 +347,11 @@ footer a:hover {
 
 .legend-toc h2 {
   margin-bottom: 1rem;
-  color: #e0cba8; /* 落ち着いたブラウン系 */
+  color: #e0cba8;
   font-family: 'Playfair Display', serif;
   text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
 }
 
-/* 二列化のためのフレックス配置 */
 .legend-toc-links {
   display: flex;
   flex-wrap: wrap;
@@ -322,7 +363,7 @@ footer a:hover {
 
 .legend-toc a {
   text-decoration: none;
-  color: #d2b48c; /* 落ち着いたタン色 */
+  color: #d2b48c;
   font-weight: bold;
   transition: color 0.3s ease;
   width: 45%;
@@ -333,7 +374,6 @@ footer a:hover {
   color: #fff5e1;
 }
 
-/* スマホ対応 */
 @media screen and (max-width: 480px) {
   .legend-toc {
     padding: 1rem;
@@ -348,4 +388,3 @@ footer a:hover {
     width: 100%;
   }
 }
-

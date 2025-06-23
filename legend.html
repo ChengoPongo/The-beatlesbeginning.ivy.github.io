@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="style.css" />
   <script>
     window.addEventListener("scroll", () => {
-      document.querySelectorAll(".fade-in").forEach(el => {
+      document.querySelectorAll(".fade-in.scroll-fade").forEach(el => {
         const rect = el.getBoundingClientRect();
         if (rect.top < window.innerHeight - 100) {
           el.classList.add("visible");
@@ -27,29 +27,17 @@
     <a href="legend.html">残した伝説</a>
   </nav>
 
-  <section class="legend-section fade-in">
-    <div class="legend-intro">
-      <p>ビートルズは音楽だけでなく、その存在自体が数々の伝説を生み出しました。このページでは、彼らにまつわる都市伝説や逸話、歴史的瞬間を紹介します。</p>
-    </div>
+  <section class="legend-intro" >
+    <p style="font-size: 1.2em; line-height: 1.8; font-family: 'Playfair Display', serif; text-align: center; margin: 2em auto; max-width: 800px;">
+      革命を起こしたのは、音楽だけではなかった――。<br>
+      ビートルズの名のもとに語り継がれる数々のエピソード。<br>
+      それは時に神話となり、時に真実を超える。<br>
+      <strong>ここでは、彼らが世界に刻んだ「伝説」を紐解いていきます。</strong>
+    </p>
+  </section>
 
-    <div class="legend-toc">
-      <ul>
-        <li><a href="#paul-dead">1. 「ポールは死んでいる」説</a></li>
-        <li><a href="#lennon-messiah">2. レノン＝救世主説</a></li>
-        <li><a href="#breakup">3. 解散の原因</a></li>
-        <li><a href="#yesterday-dream">4. 夢の中のイエスタデイ</a></li>
-        <li><a href="#world-tour">5. 世界ツアーの伝説</a></li>
-        <li><a href="#india">6. インド訪問</a></li>
-        <li><a href="#red-blue">7. 赤青アルバム</a></li>
-        <li><a href="#amp-explosion">8. アンプ爆発事件</a></li>
-        <li><a href="#rooftop">9. ルーフトップ・ライブ</a></li>
-        <li><a href="#record-burning">10. レコード焚書事件</a></li>
-        <li><a href="#revolution9">11. 「レボリューション9」</a></li>
-        <li><a href="#please-please-me">12. デビューアルバムの奇跡</a></li>
-      </ul>
-    </div>
-
-    <div class="legend-item">
+  <section>
+    <div class="legend-item fade-in scroll-fade">
       <img src="webサイト画像/死亡説.jpg" alt="ポールは死んでいる説" />
       <div class="legend-text">
         <h2 id="paul-dead">🌟 1. 「ポールは死んでいる」説（Paul is dead）</h2>
@@ -63,7 +51,7 @@
       </div>
     </div>
 
-    <div class="legend-item">
+    <div class="legend-item fade-in scroll-fade">
       <img src="webサイト画像/救世主.jpg" alt="レノン＝救世主説" />
       <div class="legend-text">
         <h2 id="lennon-messiah">🎵 2. レノン＝救世主説</h2>
@@ -76,7 +64,7 @@
       </div>
     </div>
 
-    <div class="legend-item">
+    <div class="legend-item fade-in scroll-fade">
       <img src="webサイト画像/解散.jpg" alt="ビートルズの解散原因" />
       <div class="legend-text">
         <h2 id="breakup">🧠 3. ビートルズの解散原因は誰？</h2>
@@ -91,7 +79,7 @@
       </div>
     </div>
 
-    <div class="legend-item">
+    <div class="legend-item fade-in scroll-fade">
       <img src="webサイト画像/夢でできた.jpg" alt="夢の中のイエスタデイ" />
       <div class="legend-text">
         <h2 id="yesterday-dream">🔮 4. 一晩で名曲が生まれた「夢の中のイエスタデイ」</h2>
@@ -100,7 +88,7 @@
       </div>
     </div>
 
-    <div class="legend-item">
+    <div class="legend-item fade-in scroll-fade">
       <img src="webサイト画像/世界ツアー.jpg" alt="世界ツアー" />
       <div class="legend-text">
         <h2 id="world-tour">🌍 5. 世界ツアーの伝説</h2>
@@ -108,7 +96,7 @@
       </div>
     </div>
 
-    <div class="legend-item">
+    <div class="legend-item fade-in scroll-fade">
       <img src="webサイト画像/インド訪問.jpg" alt="インド訪問" />
       <div class="legend-text">
         <h2 id="india">🕉️ 6. インド訪問とスピリチュアルな影響</h2>
@@ -116,7 +104,7 @@
       </div>
     </div>
 
-    <div class="legend-item">
+    <div class="legend-item fade-in scroll-fade">
       <img src="webサイト画像/赤青.jpg" alt="赤青アルバム" />
       <div class="legend-text">
         <h2 id="red-blue">🔵🔴 7. 赤青アルバムの愛称</h2>
@@ -124,7 +112,7 @@
       </div>
     </div>
 
-    <div class="legend-item">
+    <div class="legend-item fade-in scroll-fade">
       <img src="webサイト画像/爆発.jpg" alt="アンプ爆発事件" />
       <div class="legend-text">
         <h2 id="amp-explosion">💥 8. アンプ爆発事件</h2>
@@ -132,7 +120,7 @@
       </div>
     </div>
 
-    <div class="legend-item">
+    <div class="legend-item fade-in scroll-fade">
       <img src="webサイト画像/ルーフトップライブ.jpg" alt="ルーフトップライブ" />
       <div class="legend-text">
         <h2 id="rooftop">🎤 9. ルーフトップ・ライブ（屋上ライブ）</h2>
@@ -140,7 +128,7 @@
       </div>
     </div>
 
-    <div class="legend-item">
+    <div class="legend-item fade-in scroll-fade">
       <img src="webサイト画像/燃える絵レコード.jpg" alt="レコード焚書事件" />
       <div class="legend-text">
         <h2 id="record-burning">🔥 10. レコード焚書事件</h2>
@@ -148,7 +136,7 @@
       </div>
     </div>
 
-    <div class="legend-item">
+    <div class="legend-item fade-in scroll-fade">
       <img src="webサイト画像/レボリューション.jpg" alt="レボリューション9" />
       <div class="legend-text">
         <h2 id="revolution9">🎧 11. 「レボリューション9」とオカルト的解釈</h2>
@@ -156,7 +144,7 @@
       </div>
     </div>
 
-    <div class="legend-item">
+    <div class="legend-item fade-in scroll-fade">
       <img src="webサイト画像/一夜の伝説.jpg" alt="デビューアルバムの奇跡" />
       <div class="legend-text">
         <h2 id="please-please-me">🎬 12. デビューアルバム『Please Please Me』は1日で録音された奇跡</h2>

@@ -9,7 +9,7 @@
   <script>
     // スクロールでフェードイン
     window.addEventListener("scroll", () => {
-      document.querySelectorAll(".fade-in").forEach(el => {
+      document.querySelectorAll(".fade-in.scroll-fade").forEach(el => {
         const rect = el.getBoundingClientRect();
         if (rect.top < window.innerHeight - 100) {
           el.classList.add("visible");
@@ -24,10 +24,17 @@
   <nav class="toc">
     <a href="index.html">活動の軌道</a>
     <a href="albums.html">アルバム紹介</a>
-     <a href="legend.html">残した伝説</a>
+    <a href="legend.html">残した伝説</a>
   </nav>
 
-  <section class="member-section fade-in">
+  <!-- 「残した伝説」風のフォント＆スタイル導入文（スクロール浮かび上がり無し） -->
+  <section id="intro" class="intro-text" style="opacity:1; transform:none; margin-bottom:2em;">
+    <p>
+      ビートルズの4人は、それぞれが独自の魅力と才能を持ち寄り、音楽史に残る偉大な軌跡を刻みました。彼らの人間性や個性が織りなすストーリーは、今なお多くの人々の心を揺さぶり、世界中に影響を与え続けています。ここでは、そんな彼らの素顔と創造の源泉に迫ります。
+    </p>
+  </section>
+
+  <section class="member-section fade-in scroll-fade">
     <div class="card-container">
       <div class="card">
         <img src="webサイト画像/ジョンレノン.jpg" alt="John Lennon" />

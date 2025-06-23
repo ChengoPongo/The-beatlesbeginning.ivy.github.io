@@ -3,10 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Beatles - 活動の軌道</title>
+  <title>活動の軌道 - The Beatles</title>
   <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Playfair+Display&family=Noto+Sans+JP&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .subtitle {
+      font-size: 1.2rem;
+      font-family: 'Playfair Display', serif; /* ← オシャレなセリフ体に変更 */
+      text-align: center;
+      margin-top: 0.5rem;
+      color: #fffbea;
+      letter-spacing: 0.05em;
+      font-style: italic;
+    }
+  </style>
   <script>
+    // スクロールでフェードイン
     window.addEventListener("scroll", () => {
       document.querySelectorAll(".fade-in").forEach(el => {
         const rect = el.getBoundingClientRect();
@@ -18,10 +30,8 @@
   </script>
 </head>
 <body>
- <div class="title-bg">
-  The Beatles
-  <div class="subtitle">〜ビートルズ入門〜</div>
- </div>
+  <h1 class="title-bg">THE BEATLES</h1>
+  <p class="subtitle">~The Beatlesの紹介サイト~</p>
 
   <nav class="toc">
   <a href="index.html">活動の軌道</a>
@@ -30,15 +40,35 @@
   <a href="legend.html">残した伝説</a>  
 </nav>
 
-  <section class="fade-in" id="achievement">
-    <h2>ビートルズの功績と遺産</h2>
-    <p>ビートルズは、音楽のみならずカルチャー全体に革命をもたらした存在です。彼らは単なるアイドルバンドではなく、作詞作曲から録音、アルバム構成に至るまで自らの手でコントロールする「アーティスト型ミュージシャン」の先駆けとなりました。1960年代という激動の時代に、反戦・平和・自己表現といったメッセージを音楽に込め、若者文化の象徴となった彼らの影響は計り知れません。</p>
-    <p>また、スタジオ技術の限界に挑み、多重録音や逆再生、シンセサイザーなど革新的な手法を次々と導入し、現代の音楽制作の礎を築きました。アルバムという形態にコンセプトを持ち込み、ポップミュージックを芸術の領域へと押し上げた点でも彼らは特異な存在です。</p>
-    <p>その影響はロック、ポップ、クラシック、エレクトロニカに至るまで多岐にわたり、レディオヘッドやオアシス、宇多田ヒカル、乃木坂46など、ジャンルや国境を超えたアーティストたちに今なお引用・参照され続けています。彼らの音楽と精神は、50年以上経った今もなお、世界中の心に生き続けています。</p>
-    <p>こうした偉大な功績を踏まえ、次に彼らの活動の軌跡を年代ごとに辿り、その歩みと変遷を詳しく見ていきましょう。</p>
-  </section>
+<section id="intro" style="opacity:1; transform:none; max-width: 800px; margin: 2em auto; text-align: center; font-family: 'Playfair Display', serif; font-size: 1.2em; line-height: 1.8; color: #fffbea;">
+  <h2 style="font-family: 'Oswald', sans-serif; font-weight: 900; font-size: 2.4em; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 1em; border-bottom: 2px solid #fffbea; display: inline-block; padding-bottom: 0.3em;">
+    PROLOGUE
+  </h2>
+  <p>
+    ビートルズは、音楽の枠を越えて時代そのものを動かした存在です。
+  </p>
+  <p>
+    楽曲のすべてを自ら作り、録音・編集の技術を駆使しながら表現を追求した彼らは、<br>
+    ポップミュージックを芸術の領域へと導きました。
+  </p>
+  <p>
+    初期のアイドル的な人気から一転し、次々に革新的なアルバムを発表。<br>
+    その歩みは、音楽が単なる娯楽でなく、<span class="no-break">思想や感情を伝える手段であることを証明しました。</span>
+  </p>
+  <p>
+    今なお多くのアーティストが彼らの楽曲を手本にし、<br>
+    世界中のリスナーがその音楽に心を動かされています。
+  </p>
+  <p>
+    ここでは、そんな彼らの軌跡を時代ごとにたどりながら、<br>
+    ビートルズという奇跡のバンドがどのように時代を変えていったのかをご紹介します。
+  </p>
+</section>
 
-  <section class="fade-in" id="activity-timeline">
+
+
+
+  <section class="fade-in scroll-fade" id="activity-timeline">
     <h2>活動の軌道</h2>
 
     <div class="timeline-block">
